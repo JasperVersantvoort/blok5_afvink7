@@ -1,4 +1,8 @@
 package sequenties;
+/**
+ * @author Jasper Versantvoort
+ * class DNA
+ */
 
 import java.awt.*;
 
@@ -8,6 +12,9 @@ public class DNA {
 
 
     public void setgcpers(String seq) {
+        /**
+         * GC vormen door G en C te tellen daarna hier percentages van te maken
+         */
         int gc = 0;
         for (int i = 0; i < seq.length(); i++) {
             char a = seq.charAt(i);
@@ -19,10 +26,16 @@ public class DNA {
     }
 
     public int getgcpers() {
+        /**
+         * @return gc percentage als int
+         */
         return gcpers;
     }
 
     public void setcolor(char a) {
+        /**
+         * kleur geven aan GC (rood) of AT(geel)
+         */
         if (a == 'G' || a == 'C') {
             color = Color.RED;
         } else {
@@ -31,6 +44,9 @@ public class DNA {
     }
 
     public Color getColor() {
+        /**
+         * @return kleur van nucleotide
+         */
         return color;
     }
 }

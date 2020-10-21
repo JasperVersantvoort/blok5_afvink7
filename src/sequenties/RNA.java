@@ -1,10 +1,17 @@
 package sequenties;
+/**
+ * @author Jasper Versantvoort
+ * class RNA
+ */
 
 import java.awt.*;
 
 public class RNA {
     protected Color color;
     public void setcolor(char a) {
+        /**
+         * geeft kleur aan nucleotiden GC (rood), A(geel) en U (blauw)
+         */
         if (a == 'G' || a == 'C') {
             color = Color.RED;
         } else if (a =='A'){
@@ -16,6 +23,9 @@ public class RNA {
     }
 
     public Color getColor() {
+        /**
+         * @return de kleur horden bij nucleotiden
+         */
         return color;
     }
 }

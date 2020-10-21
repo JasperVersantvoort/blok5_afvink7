@@ -1,13 +1,20 @@
 package sequenties;
+/**
+ * @author Jasper Versantvoort
+ * class peptide
+ */
 
 import java.awt.*;
 
 public class Peptide {
     protected Color color;
-    static final String[] ONE = { "R", "N", "D", "C", "Q", "E", "G", "H", "K","S", "T","Y",
-            "A","F","I","L","M","P","W","V"};
+    static final String[] ONE = {"R", "N", "D", "C", "Q", "E", "G", "H", "K", "S", "T", "Y",
+            "A", "F", "I", "L", "M", "P", "W", "V"};
 
     public void setcolor(char a) {
+        /**
+         * geeft kleur aan aminozuren polair (blauw) apolair (rood)
+         */
         for (int x = 0; x < ONE.length; x++) {
             char s = ONE[x].charAt(0);
             if (a == s) {
@@ -19,7 +26,11 @@ public class Peptide {
             }
         }
     }
-            public Color getColor () {
-                return color;
-            }
-        }
+
+    public Color getColor() {
+        /**
+         * @return de kleur horende bij aminozuur
+         */
+        return color;
+    }
+}
