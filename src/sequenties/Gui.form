@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="sequenties.Gui">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="611" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none" title="ProDNAvis">
+      <font/>
+    </border>
+    <children>
+      <component id="bb614" class="javax.swing.JLabel" binding="uitleg">
+        <constraints/>
+        <properties>
+          <enabled value="true"/>
+          <text value="Geef een bestand met DNA, RNA of een peptide om te visualiseren"/>
+          <verticalAlignment value="0"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="22fb6" class="javax.swing.JTextField" binding="geefBestandTextField" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="25"/>
+          <text value="Geef bestand"/>
+        </properties>
+      </component>
+      <component id="423e6" class="javax.swing.JButton" binding="bladerButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="blader"/>
+        </properties>
+      </component>
+      <component id="7ae1c" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="50"/>
+          <rows value="10"/>
+        </properties>
+      </component>
+      <component id="45492" class="javax.swing.JButton" binding="visualiseerButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="visualiseer"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
